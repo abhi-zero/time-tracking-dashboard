@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function fetchData() {
     try {
-      const response = await fetch("../data/data.json");
+      const response = await fetch("https://raw.githubusercontent.com/abhi-zero/time-tracking-dashboard/main/data/data.json");
       if(!response.ok) throw new Error("Failed to fetch data");
       return await response.json();
 
